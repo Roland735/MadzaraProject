@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewing Machine Emporium</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    >
+    <style>
+        /* Add custom styles here */
+        .bg-image-about {
+            height: 80vh;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 41, 59, 0.9)), to(rgba(105, 210, 190, 0.1))), url('');
+            /* Saf4+, Chrome */
+            background-image: -webkit-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* Chrome 10+, Saf5.1+ */
+            background-image: -moz-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* FF3.6+ */
+            background-image: -ms-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* IE10 */
+            background-image: -o-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* Opera 11.10+ */
+            background-image: linear-gradient(to bottom, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* W3C */
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .slide-up {
+            animation: slideUp 1s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 font-sans text-gray-50">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-semibold text-xl">Sewing Machine Emporium</div>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="./index.html" class="hover:text-gray-300">Home</a></li>
+                <li><a href="./product.html" class="hover:text-gray-300">Products</a></li>
+                <li><a href="./about.html" class="hover:text-gray-300">About</a></li>
+                <li><a href="./contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class=" relative ">
+        <!-- Hero Section -->
+        <div class="hero-about flex items-center justify-center flex-col bg-cover bg-center py-32 bg-image-about ">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl text-white font-bold mb-4">About Sewing Machine Emporium</h1>
+                <p class="text-xl text-gray-200">Providing quality sewing machines for over a decade.</p>
+            </div>
+            <div class=" my-20 flex space-x-8">
+                <a class="text-xl px-6 py-2 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-gray-50 "
+                    href="./contact.html">Buy</a>
+                <a class="text-xl px-6 py-2 rounded-md bg-gradient-to-l from-purple-500 to-pink-500 text-gray-950"
+                    href="./contact.html">Contact
+                    us</a>
+            </div>
+        </div>
+
+        <!-- Our History Section -->
+        <div class="container mx-auto mt-16 px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our History</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-gray-300">
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet ultrices
+                        ipsum. Sed fermentum turpis vel ante sollicitudin tempor.</p>
+                    <p class="mb-4">Fusce ac lectus eu enim tempor cursus. Duis consectetur erat eu sem ullamcorper, nec
+                        laoreet purus ultricies.</p>
+                    <p class="mb-4">Vestibulum rutrum tellus vel turpis volutpat, eget efficitur mauris rutrum. Sed id
+                        ex vitae elit placerat fermentum.</p>
+                </div>
+                <div class="hidden md:block">
+                    <img src="./img/hero-image.jpg" alt="Our History" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Team Section -->
+        <div class="container mx-auto mt-16 px-4 shadow-white">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="./img/user1.jpg" alt="Team Member 1" class="rounded-full w-40 h-40 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">John Snow</h3>
+                    <p class="text-gray-700">CEO</p>
+                </div>
+                <div class="text-center">
+                    <img src="/img/user2.jpg" alt="Team Member 2" class="rounded-full w-40 h-40 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Jane Smith</h3>
+                    <p class="text-gray-700">Marketing Director</p>
+                </div>
+                <div class="text-center">
+                    <img src="/img/fashion.jpg" alt="Team Member 3" class="rounded-full w-40 h-40 mx-auto mb-4">
+                    <h3 class="text-lg font-semibold">Mike Johnson</h3>
+                    <p class="text-gray-700">Sales Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimony Section -->
+        <div class="container mx-auto mt-16 px-4 shadow-white">
+            <h2 class="text-3xl font-bold mb-8 text-center">What Our Customers Say</h2>
+            <div class="max-w-lg mx-auto">
+                <div class="bg-white rounded-lg p-6 shadow-md slide-up">
+                    <p class="text-lg text-gray-600">"I've been using their sewing machines for years and they never
+                        disappoint. Great quality and durability!"</p>
+                    <p class="text-gray-500 mt-2">- Jane Doe</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Brands Section -->
+        <section class="our-brands py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-gray-50">Our Brands</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div><img src="img/guccci.png" alt="Brand 1" class="h-24"></div>
+                    <div><img src="img/lacoste.png" alt="Brand 2" class="h-24"></div>
+                    <div><img src="img/vans.png" alt="Brand 3" class="h-24"></div>
+                    <div><img src="img/versace.png" alt="Brand 4" class="h-24"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sewing Machine Emporium. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for animations -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>

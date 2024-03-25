@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewing Machine Emporium</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        .bg-image {
+            height: 80vh;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 41, 59, 0.9)), to(rgba(105, 210, 190, 0.1))), url('');
+            /* Saf4+, Chrome */
+            background-image: -webkit-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/home.jpg');
+            /* Chrome 10+, Saf5.1+ */
+            background-image: -moz-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/home.jpg');
+            /* FF3.6+ */
+            background-image: -ms-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/home.jpg');
+            /* IE10 */
+            background-image: -o-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/home.jpg');
+            /* Opera 11.10+ */
+            background-image: linear-gradient(to bottom, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/home.jpg');
+            /* W3C */
+        }
+
+        .height-full {
+            height: calc(100vh - 64px);
+        }
+
+        .diamond-btn {
+            width: 120px;
+            height: 120px;
+            background-color: #4CAF50;
+            position: relative;
+            margin: 20px;
+            display: inline-block;
+            transform: rotate(45deg);
+            overflow: hidden;
+        }
+
+        .diamond-btn a {
+            display: block;
+            transform: rotate(-45deg);
+            color: #fff;
+            text-align: center;
+            line-height: 120px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center ">
+            <div class="text-white font-semibold text-xl">Sewing Machine Emporium</div>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="./product.html" class="hover:text-gray-300">Products</a></li>
+                <li><a href="./about.html" class="hover:text-gray-300">About</a></li>
+                <li><a href="" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center py-32 bg-image height-full ">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl text-white font-bold mb-4">Discover the Perfect Sewing Machine</h1>
+            <p class="text-xl text-gray-200">From beginners to experts, we have the right machine for you.</p>
+            <a href="#"
+                class="mt-6 inline-block  bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-6 rounded-full transition duration-300">Shop
+                Now</a>
+        </div>
+        <section class="py-16">
+            <div class="container mx-auto text-center">
+                <div class="flex items-center justify-center ">
+                    <div class="diamond-btn">
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="diamond-btn">
+                        <a href="#">WhatsApp</a>
+                    </div>
+                    <div class="diamond-btn ">
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Testimony Section -->
+    <section class="testimony py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-50">What Our Customers Say</h2>
+            <div class="max-w-lg mx-auto">
+                <p class="text-lg text-gray-600">"I've been using their sewing machines for years and they never
+                    disappoint. Great quality and durability!"</p>
+                <p class="text-gray-500 mt-2">- Jane Doe</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Brands Section -->
+    <section class="our-brands py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-50">Our Brands</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div><img src="img/guccci.png" alt="Brand 1" class="h-24"></div>
+                <div><img src="img/lacoste.png" alt="Brand 2" class="h-24"></div>
+                <div><img src="img/vans.png" alt="Brand 3" class="h-24"></div>
+                <div><img src="img/versace.png" alt="Brand 4" class="h-24"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sewing Machine Emporium. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

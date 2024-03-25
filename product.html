@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewing Machine Emporium</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        /* Add custom styles here */
+        .bg-image-about {
+            height: 80vh;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 41, 59, 0.9)), to(rgba(105, 210, 190, 0.1))), url('');
+            /* Saf4+, Chrome */
+            background-image: -webkit-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* Chrome 10+, Saf5.1+ */
+            background-image: -moz-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* FF3.6+ */
+            background-image: -ms-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* IE10 */
+            background-image: -o-linear-gradient(top, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* Opera 11.10+ */
+            background-image: linear-gradient(to bottom, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8)), url('img/women.jpg');
+            /* W3C */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 font-sans scroll-smooth">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white font-semibold text-xl">Sewing Machine Emporium</div>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="./index.html" class="hover:text-gray-300">Home</a></li>
+                <li><a href="./product.html" class="hover:text-gray-300">Products</a></li>
+                <li><a href="./about.html" class="hover:text-gray-300">About</a></li>
+                <li><a href="./contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero bg-cover bg-center py-32 bg-image-about flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl text-white font-bold mb-4">Discover the Perfect Sewing Machine</h1>
+            <p class="text-xl text-gray-200">From beginners to experts, we have the right machine for you.</p>
+            <a href="#products"
+                class="mt-6 inline-block  text-white font-bold py-3 px-6 rounded-full transition duration-300  bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l">Shop
+                Now</a>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class=" py-16 " id="products">
+        <div class="container mx-auto text-center ">
+            <h2 class="text-3xl font-bold mb-6 text-gray-50">Our Product</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden ">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 1" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Premium Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $299</p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Advanced Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $499</p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img src="img/hero-image.jpg" alt="Sewing Machine 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beginner Sewing Machine</h3>
+                        <p class="text-gray-600 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            eget
+                            ultricies justo.</p>
+                        <p class="text-gray-500">Price: $149</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"
+                class="mt-8 inline-block  bg-gradient-to-r from-purple-500 to-pink-500   text-white font-bold py-3 px-6 rounded-full transition duration-300">Contact
+                Us</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sewing Machine Emporium. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
